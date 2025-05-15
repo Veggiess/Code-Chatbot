@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body class="dark-mode">
+    <div id="auth-container">
+        <form id="auth-form">
+            <h2 id="form-title">Register</h2>
+            <input type="text" id="username" placeholder="Enter your username" required>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <button type="submit" id="auth-submit">Register</button>
+            <p id="auth-toggle">Already have an account? <a href="#" onclick="toggleAuthForm()">Log in</a></p>
+        </form>
+    </div>
+
+    <div id="chat-container" style="display:none;">
+        <button id="theme-toggle" onclick="toggleTheme()">Switch to Light Mode</button>
+        <button id="clear-chat" onclick="clearChat()">Clear Chat</button>
+        <input type="text" id="search-bar" placeholder="Search messages..." oninput="searchMessages()">
+        <div id="chat-box"></div>
+        <div id="input-container">
+            <textarea id="user-input" placeholder="Type your message here..." onkeydown="checkEnter(event)"></textarea>
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</body>
+</html>

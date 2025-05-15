@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "icon" type="image/png" href="Picures/favticon.png">
+        <title>Testing Site</title>
+        <link rel="stylesheet" href="style.css">
+        <body>
+            <header style="background-color: darkcyan;">
+                <h1>Welcome to my website</h1>
+                <a href="">Home</a>
+                <a href="">About me</a>
+                <a href="">Pricing</a>
+                <a href="">Contact</a>
+                <hr>
+            </header>
+            
+            <main>
+                <h1>Heading</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <hr>
+                <br>
+                <pre>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Eaque hic culpa eos tempora, itaque dolore amet veniam, 
+                    molestiae animi quidem ducimus deleniti consectetur unde. 
+                    Corrupti blanditiis animi tempore et ipsam!
+                </pre>
+                <!-- Comment -->
+                <br>
+                <br>
+                <a href = https://www.youtube.com/watch?v=HGTJBPNC-Gw
+                target = "blank"
+                title = "Tutorial">
+                    click me
+                </a>
+
+                <br>
+
+                <a href = "lyrics.html">
+                    Other website
+                </a>
+                
+                <br>
+
+                <a href = "mailto:test@gmail.com">
+                    email
+                </a>
+
+                <br>
+                <a href = https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g>
+                <img src = "Picures\gura.jpg"
+                alt  = "borgar gura"
+                height = 200>
+                </a>
+
+                <br>
+
+                <img src = "Picures\gura taiko.gif"
+                height = 300>
+
+                <br>
+
+                <audio controls>
+                    <source src = "Audios/Smoke - Lish Grooves.mp3">
+                </audio>
+
+                <br>
+
+                <video src = "Videos/Nature.mp4"
+                width="500px"
+                controls autoplay muted loop>
+                </video>
+
+                <br>
+
+                <hr>
+
+                <p>This is normal text</p>
+                <p>This is <b>bold</b> text</p>
+                <p>This is <i>italic</i> text</p>
+                <p>This is <u>undelined</u> text</p>
+                <p>This is <del>deleted</del> text</p>
+                <p>This is <big>big</big> text</p>
+                <p>This is <small>small</small> text</p>
+                <p>This is <sub>subscript</sub> text</p>
+                <p>This is <sup>superscript</sup> text</p>
+                <p>This is <tt>monospaced</tt> text</p>
+                <p>This is <mark style="background-color: aquamarine;">marked</mark> text</p>
+
+                <br>
+                <hr>
+                <br>
+
+                <h1><span style="background-color: blueviolet;">Span Title</span></h1>
+                <h1><div style="background-color: aqua;">Div Title</div></h1>
+
+                <br>
+
+                <p><span style="background-color: antiquewhite;">Span sentence</span></p>
+                <p><div style="background-color: cadetblue;" >Div sentence</div></p>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span style="background-color: red;">Voluptates, sint quod suscipit cumque rem officia eaque! Laboriosam itaque possimus enim</span> officiis ullam vel esse eos nemo consequatur aperiam, quod voluptas.</p>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <div style="background-color: green;">Voluptates, sint quod suscipit cumque rem officia eaque! Laboriosam itaque possimus enim</div> officiis ullam vel esse eos nemo consequatur aperiam, quod voluptas.</p>
+                
+                <br>
+                <hr>
+                <br>
+
+                <h4>Groceries</h4>
+                <ul>
+                    <li>milk</li>
+                    <li>eggs</li>
+                    <li>bread</li>
+                    <li>coffee</li>
+                    <ul>
+                        <li>sugar</li>
+                    </ul>
+                </ul>
+
+                <br>
+
+                <h4>To do list</h4>
+                <ol>
+                    <li>Eat breakfast</li>
+                    <li>Go to work</li>
+                    <li>Do chores</li>
+                    <ol>
+                        <li>Eat dinner</li>
+                    </ol>
+                </ol>
+
+                <br>
+
+                <dl style="background-color: azure; border: 2px solid;">
+                    <dt>Dragon</dt>
+                    <dd>Big lizard</dd>
+                    <dt>Phoenix</dt>
+                    <dd>Fiery Bird  </dd>
+                </dl>
+
+                <br>
+                <hr>
+                <br>
+
+                <h1>Store Hours</h1>
+                <table border="3" style="background-color: black; color: white">
+                    <tr align="center" style="background-color: blue;">
+                        <th width = 100>Sunday</th>
+                        <th width = 100>Monday</th>
+                        <th width = 100>Tuesday</th>
+                        <th width = 100>Wednesday</th>
+                        <th width = 100>Thursday</th>
+                        <th width = 100>Friday</th>
+                        <th width = 100>Saturday</th>
+                    </tr>
+                    <tr align="center">
+                        <td>Closed</td>
+                        <td>9-5</td>
+                        <td>9-5</td>
+                        <td>9-5</td>
+                        <td>9-5</td>
+                        <td>9-5</td>
+                        <td>10-5</td>
+                    </tr>
+                </table>
+
+                <br>
+                <hr>
+                <br>
+                <a href="lyrics.html" target="_blank">
+                <button style="font-size: 20; background-color:black; color:chocolate; border-radius:25px;">click me</button>
+                </a>
+
+                <button onclick="doSomething()">Greetings</button>
+                <p id = "greeting"> Hello</p>
+                <script>
+                    function doSomething() {
+                            document.getElementById("greeting").innerHTML = "Goodbye"
+                    }
+                </script>
+
+                <br>
+                <hr>
+                <br>
+
+                <form action="index.php" method="POST" enctype="multipart/form-data">
+                    <label for="username">username:</label>
+                    <input type="text" id="username" minlength="6" maxlength="15" placeholder="Enter name here" required>
+                    <br>
+                    <label for="password">password:</label>
+                    <input type="password" id="password" minlength="8" required>
+                    <br>
+                    <label for="email">email:</label>
+                    <input type="email" id="email" placeholder="example@sample.com">
+                    <br>
+            9       <label for="phone">phone #:</label>
+                    <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <br>
+                    <label for="birthdate">date of birth:</label>
+                    <input type="date" id="birthdate">
+                    <br>
+                    <label for="quantity">quantity</label>
+                    <input type="number" id="quantity" min="0" max="99" value="1">
+                    <br>
+                    <label for="Mr">Mr.</label>
+                    <input type="radio" id="Mr" name="title">
+                    <label for="Ms">Ms.</label>
+                    <input type="radio" id="Ms" name="title">
+                    <label for="Dr">Dr.</label>
+                    <input type="radio" id="Dr" name="title">
+                    <br>
+                    <label for="payment">payment</label>
+                    <select id="payment">
+                        <option value="visa">visa</option>
+                        <option value="mastercard">mastercard</option>
+                        <option value="giftcard">giftcard</option>
+                    </select>
+                    <br>
+                    <label for="subscribe">subscirbe</label>
+                    <input type="checkbox" id="subscribe">
+                    <br>
+                    <label for="comment">comment</label>
+                    <textarea id="comment" rows="3" cols="25"></textarea>
+                    <br>
+                    <label for="file">file</label>
+                    <input type="file" id="file" accept="image/png, image/jpeg">
+                    <br>
+                    <input type="reset">
+                    <br>
+                    <input type="submit">
+                </form>
+
+                <br>
+                <hr>
+                <br>
+
+                <p id="p1" class="odd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum natus nam, distinctio repudiandae fugit sapiente id cupiditate voluptatibus ad consequatur incidunt praesentium, eligendi tenetur rerum similique quam saepe quaerat ducimus.</p>
+                <p id="p2" class="even ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reiciendis consequuntur sunt quo minima exercitationem eligendi voluptatibus esse nobis voluptas. Sed ducimus in tempora, dicta voluptatum natus laborum placeat sunt!</p>
+                <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquid, iste vel necessitatibus quam soluta dignissimos? Illo, et veritatis? Minima expedita animi odit at earum voluptas quod veritatis nobis quidem.</p>
+                <p id="p4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae animi quam, harum quaerat dolore laboriosam exercitationem soluta sapiente possimus eaque pariatur eligendi eveniet itaque hic corporis in repellendus rem nobis?</p>
+                
+                <br>
+                <hr>
+                <br>
+
+                <h1>Page#3</h1>
+                <div class="pagination">
+                    <a href="page2.html"><</a>
+                    <a href="index.html">1</a>
+                    <a href="page2.html">2</a>
+                    <a href="page3.html" class="active">3</a>
+                    <a href="page4.html">4</a>
+                    <a href="page5.html">5</a>
+                    <a href="page4.html">></a>
+
+                </div>
+            </main>
+            <footer>
+                <hr>
+                author
+                <br>
+                &copy; copyright reserved
+                <br>
+                <small><a href="mailto:fake@email.com">fake@email.com</a></small>
+            </footer>
+    </head>
+</html>

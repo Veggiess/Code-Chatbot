@@ -1,0 +1,77 @@
+body {
+    background-color: black;
+    color: white;
+}
+p {
+    color: aliceblue;
+}
+h1 {
+    color: white;
+}
+#p1 {
+    color: aqua;
+}
+#p2 {
+    color: blue;
+    font-family: sans-serif;
+}
+#p3 {
+    color: cadetblue;
+}
+#p4 {
+    color: aquamarine;
+}
+.odd {
+    background-color: burlywood;
+}
+.even   {
+    background-color: chartreuse;
+}
+.pagination {
+    text-align: center;
+}
+.pagination a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+.pagination a.active {
+    background-color: hwb(84 9% 35%);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.pagination a:hover:not(.active) {
+    background-color: hwb(84 9% 35%);
+    color: white;
+    border-radius: 5px;
+}
+.dropdown button {
+    background-color: hwb(84 9% 35%);
+    color: white;
+    padding: 8px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.dropdown a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 15px;
+    background-color: hwb(212 8% 35%);
+}
+.dropdown content {
+    background-color: aliceblue;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+}
+.dropdown :hover .content {
+    display: block;
+}
+.dropdown :hover.button {
+    background-color: hwb(84 13% 13%);
+}
